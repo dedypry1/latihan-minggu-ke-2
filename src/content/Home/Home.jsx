@@ -5,48 +5,66 @@ class Home extends Component{
     render(){
         return(
             <Fragment className="contenthome">
-                <div className="slider">
+
+
+                
+                <div className="container">
+                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="10000">
+                                <img src={require('../../images/2410_996x500_styleupdate_men.jpg')} class="d-block w-100" />
+                            </div>
+
+                            <div class="carousel-item" data-interval="2000">
+                                <img src={require('../../images/MAGAZINE_324x125_20180223.jpg')}  class="d-block w-100" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src={require('../../images/OUTLET_324x125_20180221.jpg')} class="d-block w-100" />
+                            </div>
+
+                        </div>
+
+                            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                    </div>
+                
                     <div className="slidercontent">
-                            <img className="imageslider" src={require('../../images/banner-desktop.jpg')} />
+
+                        <img className="d-block w-100" src={require('../../images/996x250_LPDESKTOP_NOWONZALORAKIDSFASHION.jpg')} />
+                        <img className="img-fluid" src={require('../../images/996x40_SKINNYBANNER_HOMEPAGE_1111ZAP_BNI.jpg')} />
                     </div>
-                </div>
-                <h2 className="dataprestasi">Prestasi Murid babastudio</h2>
-                <div className="content">
+                    <div className="text-center session">
+                    <img src={require('../../images/brand/137x83_vans_20170905rev.png')} className="rounded" alt=""/>
+                    <img src={require('../../images/brand/137x83_vans_20170905rev.png')} className="rounded" alt=""/>
+                    <img src={require('../../images/brand/adidas_local_logo_28oct.png')} className="rounded" alt=""/>
+                    <img src={require('../../images/brand/r4_nike.jpg')} className="brand" alt=""/>
+                    <img src={require('../../images/brand/137x83_vans_20170905rev.png')} className="rounded" alt=""/>
+                    <img src={require('../../images/brand/137x83_vans_20170905rev.png')} className="rounded" alt=""/>
+                    <img src={require('../../images/brand/137x83_vans_20170905rev.png')} className="rounded" alt=""/>
+                    <img src={require('../../images/brand/adidas_local_logo_28oct.png')} className="rounded" alt=""/>
+                    <img src={require('../../images/brand/r4_nike.jpg')} className="brand" alt=""/>
+                    <img src={require('../../images/brand/137x83_vans_20170905rev.png')} className="rounded" alt=""/>
+                    <img src={require('../../images/brand/r4_nike.jpg')} className="brand" alt=""/>
+                    <img src={require('../../images/brand/137x83_vans_20170905rev.png')} className="rounded" alt=""/>
                    
-                    <div className="content-gambar">
-                        <div className="image">
-                            <img className="imagesliderr" src={require('../../images/21cineplex.jpg')} />
-                            <div className="contentimage">
-                                <h2 className="fontimage">www.21cineplex</h2>
-                            </div>
-                        </div>
-                        <div className="image">
-                            <img className="imagesliderr" src={require('../../images/bpn.jpg')} />
-                            <div className="contentimage">
-                                <h2 className="fontimage">www.bpn.go.id</h2>
-                            </div>
-                        </div>
-                        <div className="image">
-                            <img className="imagesliderr" src={require('../../images/republika.jpg')} />
-                            <div className="contentimage">
-                                <h2 className="fontimage">www.republika.co.id</h2>
-                            </div>
-                        </div>
-
-                    </div>
-                    {/* end cgambar */}
-                    <div className="content-gambar">
-                        <h2 className="dataprestasi">Tempat Kursus Babastudio</h2>
-                        <div className="content-yutube">
-                             <iframe width="560" height="315" src="https://www.youtube.com/embed/k1OWLK0Yhc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div className="content-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.195410128611!2d106.62761531431039!3d-6.237955662820547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fbf617855555%3A0x499c259b6b3d813a!2sKampus%20Babastudio%20-%20Tangerang.%20Kursus%20web%2C%20SEO%2C%20Internet%20marketing!5e0!3m2!1sid!2sid!4v1571069969653!5m2!1sid!2sid" width="550" height="300" frameborder="0"  allowfullscreen=""></iframe>
-                        </div>
-
-                    </div>
-                    
+                  <div className="session">
+                        <h1>New This Week</h1>
+                  </div>
+                  <div className="text-center session">
+                      <img className="img-thumbnail"width="300px" src={require('../../images/gallery/322x300_HOMEPAGE_ALLUNDER188K_WOMEN.jpg')}/>
+                      <img className="img-thumbnail"width="300px" src={require('../../images/gallery/322x300_HOMEPAGE_CROSSBODYBAGS70OFF_WOMEN.jpg')}/>
+                      <img className="img-thumbnail" width="300px" src={require('../../images/gallery/322x300_HOMEPAGE_KEMEJADIBAWAH249_MEN.jpg')}/>
+                  </div>
                 </div>
+                </div>
+
+
 
               
             </Fragment>
